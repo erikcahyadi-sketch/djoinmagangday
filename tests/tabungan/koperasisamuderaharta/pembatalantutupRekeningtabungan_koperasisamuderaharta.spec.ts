@@ -30,10 +30,11 @@ function pembatalantutupRekeningtabungan_koperasisamuderaharta() {
         const tutupRekening = page.locator('a').filter({ hasText: /^Tutup Rekening$/ }).first();
         await tutupRekening.waitFor({ state: 'visible', timeout: 15000 });
         await tutupRekening.click();
+        await page.getByText('5250078').click();
         await page.waitForTimeout(3000);
         await page.screenshot({
             path: 'pembatalantutupRekeningtabungan_koperasisamuderaharta_screenshot.png'
         })
     })
 }
-pembatalantutupRekeningtabungan_koperasisamuderaharta();
+// pembatalantutupRekeningtabungan_koperasisamuderaharta();
