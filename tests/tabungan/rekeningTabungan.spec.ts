@@ -18,7 +18,10 @@ function rekeningTabungan() {
        await page.waitForTimeout(2000);
        await page.getByRole('link',{
         name : 'Tabungan'
-       }).first().click();
+       }).first().isVisible;
+       await page.getByRole('link',{
+        name : 'Tabungan'
+       }).click();
        await page.waitForTimeout(3000);
        await page.getByRole('link',{
         name : 'Rekening Tabungan'

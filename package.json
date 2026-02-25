@@ -2,7 +2,9 @@
   "name": "djoinmagangday",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "make:test": "node make-test.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

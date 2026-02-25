@@ -4,7 +4,8 @@ import path from 'path';
 
 
 function profilDjoin() {
-    dotenv.config({ path: path.resolve(__dirname, '..', '..', 'secreet_key', '.env') });    const usernameCoopmax =  process.env.USERNAME_COOPMAX!;
+    dotenv.config({ path: path.resolve(__dirname, '..', '..', 'secreet_key', '.env') });    
+    const usernameCoopmax =  process.env.USERNAME_COOPMAX!;
     const passwordCoopmax = process.env.PASSWORD_COOPMAX!;
     test('akses profile saya', async ({page}) => {
         await page.waitForTimeout(3000);
@@ -23,4 +24,4 @@ function profilDjoin() {
     })  
        
 }
-profilDjoin();
+// profilDjoin();
